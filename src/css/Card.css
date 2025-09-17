@@ -1,0 +1,132 @@
+.card {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px #ffffff85, -1px -1px 10px #00000014;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card-details {
+    color: black;
+    flex-direction: column;
+    display: flex;
+    font-size: .9rem;
+    padding: 5px;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+.card-sub-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.product-rating {
+    display: flex;
+    background-color: deepskyblue;
+    color: white;
+    align-items: center;
+    padding: 3px 5px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.rating-icon {
+    color: white;
+    font-size: 0.7rem;
+    margin-right: 3px;
+}
+
+.product-brand {
+    font-weight: 500;
+}
+
+.product-price {
+    font-weight: 600;
+}
+
+.card-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: brightness(0.7);
+    box-shadow: 0px -10px 10px #0000000b;
+    width: 100%;
+    height: 40%;
+    background: rgb(255, 255, 255);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.5s ease;
+
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+}
+
+.card-favorite-btn,
+.card-cart-btn,
+.card-buynow-btn {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 10px;
+    box-shadow: 1px 1px 10px #ffffff85, -1px -1px 10px #00000014;
+}
+
+.card-buynow-btn {
+    font-size: 0.7rem;
+    border-radius: 100px;
+     outline: 1px solid rgba(0, 191, 255, 0);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.card-favorite-btn-icon,
+.card-cart-btn-icon {
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.card-favorite-btn-icon:hover {
+    transition: all 0.3s ease;
+    color: rgb(255, 0, 0);
+}
+
+.card-buynow-btn:hover {
+    outline: 1px solid deepskyblue;
+    color: deepskyblue;
+    transition: all 0.3s ease;
+}
+
+.card-cart-btn-icon:hover {
+    transition: all 0.3s ease;
+    color: deepskyblue;
+}
