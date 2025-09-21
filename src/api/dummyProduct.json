@@ -78,7 +78,7 @@
     "description": "Class leather formal shoes",
     "rating": "8.9",
     "price": "15999.00",
-    "brand": "Bata"
+    "brand": "tata"
   },
   {
     "id": 10,
@@ -86,7 +86,7 @@
     "title": "Wireless Mouse",
     "description": "Ergonomic design with fast response",
     "rating": "8.6",
-    "price": "200000.00",
+    "price": "2000.00",
     "brand": "Logic"
   }
 ]
