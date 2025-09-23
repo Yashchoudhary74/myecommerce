@@ -41,7 +41,8 @@
 
 .product-rating {
     display: flex;
-    background-color: deepskyblue;
+    /* background-color: deepskyblue; */
+    background-color: #ff18a2;
     color: white;
     align-items: center;
     padding: 3px 5px;
@@ -62,6 +63,7 @@
 }
 
 .product-price {
+    background-color: #ff18a2;
     font-weight: 600;
 }
 
